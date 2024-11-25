@@ -1,11 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import AddButton from "./components/AddButton";
+import ImageComponent from "./components/ImageComponent";
+
+const url = "https://flatlogic.com/blog/wp-content/uploads/2021/06/12-1.png";
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<AddButton name="Bottone creato" />
+				<ImageComponent src={url} title="react" />
 				<p>
 					Edit <code>src/App.js</code> and save to reload.
 				</p>
@@ -18,9 +22,6 @@ function App() {
 					Learn React
 				</a>
 			</header>
-			<main>
-				<h1>Valter</h1>
-			</main>
 		</div>
 	);
 }
